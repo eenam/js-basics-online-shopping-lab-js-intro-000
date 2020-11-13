@@ -23,9 +23,8 @@ function viewCart() {
   } else if (cart.length === 2) {
     return `In your cart, you have ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
   } else {
-    return `In your cart, you have ${itemName} at ${itemPrice}, ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
     for (let i = 0; i < cart.length, i++) {
-      
+    return `In your cart, you have ${itemName} at ${itemPrice}, ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
     }
 }
 }
