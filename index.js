@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(itemName) {
-  var itemObj = {itemName: itemName, itemPrice: Math.floor(Math.random() * 100) + 1}
+  let itemObj = {itemName: itemName, itemPrice: Math.floor(Math.random() * 100) + 1}
   cart.push(itemObj);
   return (`${itemName} has been added to your cart.`)
 }
@@ -19,7 +19,7 @@ function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty.";
   }
-  
+
 
   else if (cart.length === 1) {
     return `In your cart, you have ${itemName} at ${itemPrice}.`
