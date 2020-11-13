@@ -26,7 +26,7 @@ function viewCart() {
     return startSentence += `${i} at ${itemPrice}, ${i} at ${itemPrice}, and ${i} at ${itemPrice}.`
     }
   if (cart.length === 1) {
-    return startSentence += `${i} at ${itemPrice}`
+    return startSentence += `${i} at ${itemPrice}.`
   } else if (cart.length === 2) {
     return startSentence += `${i} at ${itemPrice}, and ${i} at ${itemPrice}. `
 
