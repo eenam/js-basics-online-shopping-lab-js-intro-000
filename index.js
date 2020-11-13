@@ -21,15 +21,15 @@ function viewCart() {
   }
 
   var startSentence = "In your cart, you have"
-
-    if (cart.length === 1) {
-    return `In your cart, you have ${itemName} at ${itemPrice}.`
-  } else if (cart.length === 2) {
-    return `In your cart, you have ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
-  } else {
-    for (let i = 0; i < cart.length; i++) {
+  for (let i = 0; i < cart.length; i++) {
     return `In your cart, you have ${itemName} at ${itemPrice}, ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
     }
+  if (cart.length === 1) {
+    return `In your cart, you have ${itemName} at ${itemPrice}.`
+} else if (cart.length === 2) {
+    return `In your cart, you have ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
+} else {
+
 }
 }
 
