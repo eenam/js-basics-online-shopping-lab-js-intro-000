@@ -18,11 +18,13 @@ function addToCart(itemName) {
 function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty.";
-  }
-  let startSentence = "In your cart, you have"
-  for (let i = 0; i < cart.length; i++) {
+  } else {
+    let startSentence = "In your cart, you have"
+    for (let i = 0; i < cart.length; i++) {
     let itemName = i + 1
     let itemPrice = cart[i]
+  }
+
     return startSentence += `${i} at ${itemPrice}, ${i} at ${itemPrice}, and ${i} at ${itemPrice}.`
     }
   if (cart.length === 1) {
