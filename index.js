@@ -23,7 +23,7 @@ function viewCart() {
     for (let i = 0; i < cart.length; i++) {
     let itemName = i + 1
     let itemPrice = cart[i]
-    startSentence += `${i} at ${itemPrice}, ${i} at ${itemPrice}, and ${i} at ${itemPrice}.`
+    return startSentence += `${i} at ${itemPrice}, ${i} at ${itemPrice}, and ${i} at ${itemPrice}.`
   }
 }
     if (cart.length === 1) {
