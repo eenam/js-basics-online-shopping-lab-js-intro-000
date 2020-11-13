@@ -23,13 +23,13 @@ function viewCart() {
   for (let i = 0; i < cart.length; i++) {
     let itemName = i
     let itemPrice = cart[i]
-    return `In your cart, you have ${itemName} at ${itemPrice}, ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
+    return startSentence += `${i} at ${itemPrice}, ${i} at ${itemPrice}, and ${i} at ${itemPrice}.`
     }
   if (cart.length === 1) {
     return `In your cart, you have ${itemName} at ${itemPrice}.`
-} else if (cart.length === 2) {
+  } else if (cart.length === 2) {
     return `In your cart, you have ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
-} else {
+  } else {
 
 }
 }
