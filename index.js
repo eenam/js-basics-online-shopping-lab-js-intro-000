@@ -21,7 +21,7 @@ function viewCart() {
   }
   let startSentence = "In your cart, you have"
   for (let i = 0; i < cart.length; i++) {
-    let itemName = i
+    let itemName = i + 1
     let itemPrice = cart[i]
     return startSentence += `${i} at ${itemPrice}, ${i} at ${itemPrice}, and ${i} at ${itemPrice}.`
     }
@@ -29,7 +29,6 @@ function viewCart() {
     return startSentence += `${i} at ${itemPrice}.`
   } else if (cart.length === 2) {
     return startSentence += `${i} at ${itemPrice}, and ${i} at ${itemPrice}. `
-
 }
 }
 
