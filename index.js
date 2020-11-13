@@ -26,10 +26,9 @@ function viewCart() {
     return startSentence += `${i} at ${itemPrice}, ${i} at ${itemPrice}, and ${i} at ${itemPrice}.`
     }
   if (cart.length === 1) {
-    return `In your cart, you have ${itemName} at ${itemPrice}.`
+    return startSentence += `${i} at ${itemPrice}`
   } else if (cart.length === 2) {
-    return `In your cart, you have ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
-  } else {
+    return startSentence += `${i} at ${itemPrice}, and ${i} at ${itemPrice}. `
 
 }
 }
