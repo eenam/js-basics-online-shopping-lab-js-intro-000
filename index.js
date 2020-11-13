@@ -20,8 +20,10 @@ function viewCart() {
     return "Your shopping cart is empty.";
   }
 
-  var startSentence = "In your cart, you have"
+  let startSentence = "In your cart, you have"
   for (let i = 0; i < cart.length; i++) {
+    let itemName =
+    let itemPrice = 
     return `In your cart, you have ${itemName} at ${itemPrice}, ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
     }
   if (cart.length === 1) {
