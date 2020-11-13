@@ -25,14 +25,12 @@ function viewCart() {
     let itemPrice = cart[i]
     startSentence += `${i} at ${itemPrice}, ${i} at ${itemPrice}, and ${i} at ${itemPrice}.`
   }
-
-
-    }
-  if (cart.length === 1) {
+}
+    if (cart.length === 1) {
     return startSentence += `${i} at ${itemPrice}.`
   } else if (cart.length === 2) {
     return startSentence += `${i} at ${itemPrice}, and ${i} at ${itemPrice}. `
-}
+  }
 }
 
 
