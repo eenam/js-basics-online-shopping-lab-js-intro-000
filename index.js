@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(itemName) {
-  let itemObj = {itemName: itemName, itemPrice: Math.floor(Math.random() * 100) + 1}
+  var itemObj = {itemName: itemName, itemPrice: Math.floor(Math.random() * 100) + 1}
   cart.push(itemObj);
   return (`${itemName} has been added to your cart.`)
 }
@@ -20,8 +20,9 @@ function viewCart() {
     return "Your shopping cart is empty.";
   }
 
+  var startSentence = "In your cart, you have"
 
-  else if (cart.length === 1) {
+    if (cart.length === 1) {
     return `In your cart, you have ${itemName} at ${itemPrice}.`
   } else if (cart.length === 2) {
     return `In your cart, you have ${itemName} at ${itemPrice}, and ${itemName} at ${itemPrice}.`
